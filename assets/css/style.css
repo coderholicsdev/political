@@ -5366,6 +5366,17 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   bottom: 0;
   background: rgba(14, 17, 90, 0.8);
 }
+
+.contact-page-form-section.my-contact-form-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+}
+
 .contact-page-form-section .contact-item-wrapper {
   background: #fff;
   padding: 50px;
@@ -6937,7 +6948,7 @@ input[type=checkbox] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(260deg, rgba(0, 5, 101, 0) 0%, #000565 100%);
+  background: linear-gradient(260deg, rgba(0, 5, 101, 0) 0%, #000565 50%);
 }
 .header-area.header-bg-03 {
   background-position: top;
@@ -10492,11 +10503,12 @@ input[type=checkbox] {
   /*👉margin-bottom: 15px;👈*/
 }
 .administration-section .administration-single-items .content p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 28px;
   font-family: var(--body-font);
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #4E4E56;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .administration-section .administration-single-items .administration-quotes {
