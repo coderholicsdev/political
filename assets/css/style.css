@@ -1730,6 +1730,11 @@ ul {
   margin-bottom: 50px;
   z-index: 0;
   overflow: hidden;
+  /* added */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /*👉.w-fixed{
   border: 3px solid red;
@@ -6643,7 +6648,8 @@ input[type=checkbox] {
 .header-area.header-sanatory .header-inner .title.style-02 {
   margin: 0 auto;
   font-size: 79px;
-  line-height: 112px;
+  /* line-height: 112px; */
+  line-height: 80px;
   text-transform: unset !important;
 }
 @media only screen and (max-width: 991px) {
@@ -6652,6 +6658,15 @@ input[type=checkbox] {
     line-height: 60px;
   }
 }
+
+/* added */
+@media only screen and (max-width: 540px) {
+  .header-area.header-sanatory .header-inner .title.style-02 {
+    font-size: 50px;
+    line-height: 35px;
+  }
+}
+/* added */
 .header-area.header-sanatory .header-inner h5 {
   font-size: 20px;
   line-height: 28px;
@@ -6948,7 +6963,9 @@ input[type=checkbox] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(260deg, rgba(0, 5, 101, 0) 0%, #000565 50%);
+  /* background: linear-gradient(260deg, rgba(0, 5, 101, 0) 0%, #000565 50%); */
+  /* added */
+  background: linear-gradient(260deg, rgba(0, 5, 101, 0) -100%, #0075 -100%);
 }
 .header-area.header-bg-03 {
   background-position: top;
@@ -7656,6 +7673,13 @@ input[type=checkbox] {
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li {
   position: relative;
 }
+.navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li:nth-child(5){
+  display: none;
+}
+/* .navbar-area .navbar-collapse .navbar-nav li .my-register a {
+  color: red ;
+  display: none !important;
+} */
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li .line {
   position: absolute;
   top: 20px;
@@ -7979,6 +8003,8 @@ input[type=checkbox] {
     background-color: #000565;
     padding: 0 20px;
   }
+  
+  
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.8);

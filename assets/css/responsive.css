@@ -694,12 +694,25 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    /* added */
+    /* .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li:nth-child(5) a{
+        
+        
+        border: 2px solid #dd131a;
+        padding: 5px;
+        box-shadow: 2px, 2px #dd131a;
+      } */
+      /* added */
     .navbar-area.nav-style-01 .nav-container .nav-right-content {
         display: none;
     }
     .header-area.header-sanatory .senatory-bg-img {
         right: -24%;
     }
+    /* added */
+    .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li:nth-child(5){
+        display:inline;
+      }
     .our-party-section-area .party-vision-shape {
         display: none;
     }
@@ -837,6 +850,19 @@
         min-height: 225px;
         left: 15px;
     }
+    /* added */
+    .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li:nth-child(5){
+        display:flex;
+      }
+
+      /* .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li:nth-child(5) a{
+        display:flex;
+        
+        border: 2px solid #dd131a;
+        padding: 5px;
+        box-shadow: 2px, 2px #dd131a;
+      } */
+     /* added */
 }
 
 @media only screen and (max-width: 991px) {
@@ -1396,7 +1422,10 @@
         display: none;
     }
     .header-area .subtitle {
-        line-height: 40px;
+        /* line-height: 40px; */
+        /* added */
+        line-height: 25px;
+         /* added */
         font-size: 20px;
     }
     .header-area.header-sanatory .header-inner .title {
@@ -2989,7 +3018,10 @@
     }
     .header-area .subtitle span {
         font-size: 19px;
-        line-height: 29px;
+        /* line-height: 29px; */
+        /* added */
+        line-height: 10px;
+        /* added */
     }
     .header-area.header-sanatory .header-inner .title {
         font-size: 32px;
@@ -3348,7 +3380,10 @@
     }
     .header-area .subtitle span {
         font-size: 18px;
-        line-height: 28px;
+        /* line-height: 28px; */
+         /* added */
+         line-height: 8px;
+         /* added */
     }
     .header-area.header-sanatory .header-inner .title {
         font-size: 29px;
